@@ -8,4 +8,4 @@
     - name: "GENERATE CONFIGS FOR EACH OS"
       template:
         src: "./templates/snmp/{{ ansible_network_os }}.j2"
-        dst: "./configs/snmp/{{ inventory_hostname }}.cfg"
+        dest: "./configs/snmp/{{ inventory_hostname }}.cfg"
